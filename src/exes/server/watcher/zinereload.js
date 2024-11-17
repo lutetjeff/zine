@@ -3,7 +3,7 @@ function log() {
 }
 
 function zineConnect() {
-  let socket = new WebSocket("ws://" + window.location.host + "/__zine/ws");
+  let socket = new WebSocket("wss://" + window.location.host + "/__zine/ws");
 
   socket.addEventListener("open", (event) => {
    log("connected");
